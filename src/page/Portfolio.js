@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import json from "../data.json";
 
+
 function Portfolio() {
   const [counter, setCounter] = useState(0);
   const [counterPic, setCounterPic] = useState(0);
@@ -9,6 +10,7 @@ function Portfolio() {
   const refList = useRef([]);
   const refImg = useRef([]);
   const refRatio = useRef([]);
+
 
   const clickHandler = (config) => {
     if (config === "next") {
@@ -82,7 +84,7 @@ function Portfolio() {
                       key={i}
                       style={{
                         transform: `translateX(-${counterPic * 100}%)`,
-                        background: `url(/projects/${data.id}/${pic})`,
+                        background: `url(${process.env.PUBLIC_URL}/projects/${data.id}/${pic})`,
                       }}
                     />
                   ))}
@@ -134,7 +136,7 @@ function Portfolio() {
               className="carousel__cell"
               style={{
                 transform: `translateY(-${counter * 110}%)`,
-                background: `url(/projects/${data.id}/${data.pics[0]})`,
+                background: `url(${process.env.PUBLIC_URL}/projects/${data.id}/${data.pics[0]})`,
               }}
               key={i}
               ref={(el) => (refList.current[i] = el)}

@@ -58,6 +58,9 @@ a {
 .p-6 {
   padding: 61px 0;
 }
+.px-1{
+  padding: 0 10px;
+}
 .bg-wrapper {
   width: 100%;
   min-height: 100vh;
@@ -116,6 +119,11 @@ a {
   background-color: #ccc;
   margin-bottom: 10px;
   border: 1px solid #fff;
+}
+@media (max-width: 720px){
+  .progress{
+    width: 150px;
+  }
 }
 .progress > .inside {
   /* background-color: #6454d1; */
@@ -221,14 +229,35 @@ a {
     opacity: 0;
   }
 }
+.img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .img > img {
   width: 100%;
   -webkit-animation: imgAnimate 10s infinite;
           animation: imgAnimate 10s infinite;
 }
+@media (max-width: 1200px) {
+  .img > img{
+    width: 60%;
+    filter: opacity(0.7);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  .title{
+    flex: 0 0 100%;
+    width: 100%;
+    z-index: 1;
+  }
+}
 .title .edu {
   padding: 20px;
 }
+
 .title .edu > .icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,11 +277,11 @@ a {
 .title .edu > .icon .year_txt {
   color: #fff;
   font-size: 12px;
-  width: 70px;
+  min-width: 70px;
 }
 .title .edu > .icon .circle {
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   border-radius: 50%;
   background-color: #fff;
 }
@@ -461,4 +490,32 @@ a {
   color: #efb428;
   text-decoration: underline;
 }
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
+  flex: 0 0 100%;
+}
+.notfound_img{
+  width: 30%;
+}
+.txt{
+
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+.btn-goback{
+ background-color: #6454D1;
+ padding: 10px 20px;
+ color: #fff;
+ border-radius: 20px;
+ margin-top: 50px;
+ font-weight: 800;
+ transition: all 0.25s;
+}
+.btn-goback:hover{
+  background-color: #4a3f96;
+}

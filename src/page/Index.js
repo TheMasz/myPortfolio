@@ -4,7 +4,7 @@ import img from "../assets/images/me.png";
 function index() {
   return (
 <div className="row p-6 main-wrap">
-  <article className="title">
+  <article className="title px-1">
     <h1>Hello I'm <br />
       <span>Tanawan Wongsawadee</span></h1>
     <p>web development who focuses on writing clean, elegant and efficient code.</p>

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Index from "./page/Index";
 import Portfolio from "./page/Portfolio.js";
 import { useState } from "react";
+import NoMatch from "./page/NoMatch";
 
 function App() {
   const [isActive, setActive] = useState(false);
@@ -13,8 +14,9 @@ function App() {
         <div className="container">
           <Navbar isActive={isActive} setActive={setActive} />
           <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/myPortfolio/" element={<Index />} />
+            <Route path="/myPortfolio/portfolio" element={<Portfolio />} />
+            <Route path="*" element={<NoMatch />} />
           </Routes>
         </div>
       </div>
