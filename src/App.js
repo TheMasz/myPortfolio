@@ -14,8 +14,8 @@ function App() {
         <div className="container">
           <Navbar isActive={isActive} setActive={setActive} />
           <Routes>
-            <Route path="/myPortfolio/" element={<Index />} />
-            <Route path="/myPortfolio/portfolio" element={<Portfolio />} />
+            <Route path="/" element={<Index />} />
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
         </div>
