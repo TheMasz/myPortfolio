@@ -8,11 +8,27 @@
   <body>
     <div id="root"></div>
     <script>
-      const redirectUrl = '/404.html';
+      const redirectUrl = "/404.html";
       if (window.location.pathname !== redirectUrl) {
         window.location.href = redirectUrl;
       }
+
+      const url = new URL(window.location.href);
+      const path = url.pathname.substr(url.pathname.indexOf("/", 1));
+      window.location.replace(`/myPortfolio/${path}`);
+
+      // Dynamically fetch the bundle.js filename
+      const scripts = document.getElementsByTagName("script");
+      const bundleScript = Array.from(scripts).find((script) =>
+        script.src.includes("main.")
+      );
+      const bundlePath = bundleScript.src;
+
+      // Create a new script element and set the src attribute to the bundle.js path
+      const script = document.createElement("script");
+      script.src = bundlePath;
+      document.body.appendChild(script);
     </script>
-    <script src="static/js/main.64d4a120.js/"></script>
+
   </body>
 </html>

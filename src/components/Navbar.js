@@ -5,7 +5,7 @@ function navbar(e) {
   return (
     <div className="navbar">
       <h1>
-        <NavLink end to="/myPortfolio/">
+        <NavLink end to="/">
           THEMASZ
         </NavLink>
       </h1>
