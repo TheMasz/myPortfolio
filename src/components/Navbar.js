@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function navbar(e) {
   return (
     <div className="navbar">
-      <h1>
+      <h1 className="px-1">
         <NavLink end to="/">
           THEMASZ
         </NavLink>
