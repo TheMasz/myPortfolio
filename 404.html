@@ -12,8 +12,9 @@
       if (window.location.pathname !== redirectUrl) {
         window.location.href = redirectUrl;
       }
-
-      const url = new URL(window.location.href);
+    </script>
+    <script>
+        const url = new URL(window.location.href);
       const path = url.pathname.substr(url.pathname.indexOf("/", 1));
       window.location.replace(`/myPortfolio/${path}`);
 
