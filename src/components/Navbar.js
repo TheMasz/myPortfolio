@@ -5,15 +5,14 @@ function navbar(e) {
   return (
     <div className="navbar">
       <h1 className="px-1">
-        <NavLink end to="/myPortfolio/">
+        <NavLink  to="/">
           THEMASZ
         </NavLink>
       </h1>
       <nav className="nav-list">
         <li>
           <NavLink
-            end
-            to="/myPortfolio/"
+            to="/"
             style={({ isActive }) =>
               isActive ? { color: "#EFB428" } : { color: "white" }
             }
@@ -23,7 +22,7 @@ function navbar(e) {
         </li>
         <li>
           <NavLink
-            to="/myPortfolio/portfolio"
+            to="/portfolio"
             style={({ isActive }) =>
               isActive ? { color: "#EFB428" } : { color: "white" }
             }
