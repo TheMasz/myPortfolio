@@ -9,7 +9,7 @@ import NoMatch from "./page/NoMatch";
 function App() {
   const [isActive, setActive] = useState(false);
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/myPortfolio">
       <div className="bg-wrapper">
         <div className="container">
           <Navbar isActive={isActive} setActive={setActive} />
