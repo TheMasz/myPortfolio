@@ -28,7 +28,14 @@
         { "name": "SCSS", "percen": 12.8 },
         { "name": "HTML", "percen": 0.7 }
       ],
-      "desc": "Ecommerce Website พัฒนาด้วย ReactJS NodeJS MongoDB ซึ่งจะแบ่งระบบออกเป็น 3 ส่วน คือ 1.ผู้ดูแลระบบ 2.ผู้ซื้อ 3.ผู้ขาย ซึ่งผู้ดูแลระบบจะสามารถจัดการอนุมัติผู้ใช้ สินค้า และรายการสั่งซื้อ โดยผู้ซื้อทำการสั่งซื้อสินค้าจากนั้นเลือกวิธีการชำระเงินจะแบ่งออกเป็น 2 ส่วนหลักๆคือ เก็บเงินปลายทางและโอน โดยหากเลือกโอนจะต้องเพิ่มหลักฐานการโอนเงิน จากนั้นรอผู้ดูแลระบบอนุมัติการชำระเงินจากนั้นผู้ขายจะทำการจัดส่งและเพิ่มรายระเอียดลงระบบ",
+      "desc": [
+        "Authenfication system",
+        "Seller management system",
+        "Admin management system",
+        "Payment system",
+        "Responsive support",
+        "Build with React Framework, MongoDB"
+      ],
       "github": "https://github.com/TheMasz/Project-Ecommerce"
     },
     {
@@ -48,7 +55,13 @@
         { "name": "PHP", "percen": 33.2 },
         { "name": "CSS", "percen": 15.6 }
       ],
-      "desc": "Ourgram Website พัฒนาด้วย Altoroute PHP Framework  MySQL ซึ่งจะแบ่งระบบออกเป็น 2 ส่วน คือ 1.ผู้ดูแลระบบ 2.ผู้ใช้งาน ซึ่งผู้ดูแลระบบจะสามารถจัดการอนุมัติผู้ใช้ สินค้า และรายการสั่งซื้อ โดยผู้ซื้อทำการสั่งซื้อสินค้าจากนั้นเลือกวิธีการชำระเงินจะแบ่งออกเป็น 2 ส่วนหลักๆคือ เก็บเงินปลายทางและโอน โดยหากเลือกโอนจะต้องเพิ่มหลักฐานการโอนเงิน จากนั้นรอผู้ดูแลระบบอนุมัติการชำระเงินจากนั้นผู้ขายจะทำการจัดส่งและเพิ่มรายระเอียดลงระบบ",
+      "desc": [
+        "Authenfication system",
+        "User Post,Like,comment Actions",
+        "Admin management system",
+        "Responsive support",
+        "Build with PHP, MYSQL"
+      ],
       "github": "https://github.com/TheMasz/ourgram"
     }
   ]

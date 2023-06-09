@@ -118,9 +118,14 @@ function Portfolio() {
                   </div>
                 ))}
               </div>
+              
               <div className="desc">
                 <h3>Description:</h3>
-                <p>{data.desc}</p>
+                <ul>
+                  {data.desc.map((data,i)=>(
+                    <li index={i}>{data}</li>
+                  ))}
+                </ul>
               </div>
               <Link to={data.github} target="_blank" className="github_link">
                 {data.github}
