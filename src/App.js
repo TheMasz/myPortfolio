@@ -1,9 +1,9 @@
 import "./assets/styles/navbar.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Index from "./page/Index";
 import Portfolio from "./page/Portfolio";
 import { useState } from "react";
+import HomePage from "./page/HomePage";
 // import NoMatch from "./page/NoMatch";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <div className="container">
           <Navbar isActive={isActive} setActive={setActive} />
           <Routes>
-            <Route path="/" element={<Index />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/portfolio" element={<Portfolio />} />
             {/* <Route path="*" element={<NoMatch />} /> */}
           </Routes>

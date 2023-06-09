@@ -583,3 +583,23 @@ a {
 .btn-goback:hover {
   background-color: #4a3f96;
 }
+.typed{
+  transition: all 0.2s;
+  height: 140px;
+}
+.typed > .sympol{
+
+  background-color: white;
+  border-radius: 3px;
+  animation: typing 0.5s infinite;
+
+}
+@keyframes typing{
+  from{
+    background-color: white;
+  }
+  to{
+    background-color: #c2c2c2;
+    color: #c2c2c2;
+  }
+}
